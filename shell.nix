@@ -17,8 +17,6 @@ let intel2GAS = pkgs.stdenv.mkDerivation rec {
 };
 
 in pkgs.mkShell {
-	# TODO: intel2gas Python
-
 	buildInputs = [ intel2GAS ] ++ (with pkgs; [
 		a2ps
 		automake
